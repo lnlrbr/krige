@@ -40,7 +40,7 @@ def randin(grid, pcent):
     ind = list()
     m = int(n*pcent/100)
     while len(ind) != m:
-        a = np.random.random_integers(0, n, 1)
+        a = np.random.random_integers(0, n)
         if a not in ind:
             ind.append(a)
     res = grid[ind].ravel()
